@@ -1,0 +1,22 @@
+﻿@model Persona
+
+@using (Html.BeginForm())
+{
+        <h2>Create</h2>
+
+        <div>
+        @Html.LabelFor(model=>model.Name)
+            <div>
+            @Html.EditorFor(model => model.Name)
+            </div>
+        </div>
+
+        <div>
+        @Html.LabelFor(model=>model.Surname)
+            <div>
+            @Html.EditorFor(model => model.Surname)
+            </div>
+        </div>
+
+        <input type="submit" value="Save" />
+}
